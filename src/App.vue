@@ -1,20 +1,11 @@
 <template>
     <TopBar/>
-
-    <div class="d-flex bd-highlight">
-        <div class="col-2">
-            <SideBar/>
-        </div>
-        <div>
-            <MainContainer/>
-        </div>
-    </div>
+    <SideBar/>
 </template>
 
 <script>
     import TopBar from './components/core/TopBar.vue';
     import SideBar from './components/core/SideBar.vue';
-    import MainContainer from './components/core/MainContainer.vue';
 
     export default
     {
@@ -22,8 +13,7 @@
         components:
         {
             TopBar,
-            SideBar,
-            MainContainer
+            SideBar
         }
     }
 </script>
